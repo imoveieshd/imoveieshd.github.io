@@ -14,6 +14,13 @@
 
   ga('create', 'UA-902909-26', 'apnaview.info');
   ga('send', 'pageview');
+  
+  <script type="text/javascript">
+    function goToProject(){
+        var project = document.getElementById("project").value;
+        window.location.href = "imoveieshd.github.io"+project;
+    }
+</script>
 
 </script>      <style type="text/css">
         .movie-list{
@@ -143,6 +150,10 @@
 	}
 	</script>
 </div>
+<form action="#" onsubmit="return false;">
+    <input type="text" id="project"/>
+    <button id="submit" onclick="goToProject()">Go</button>
+</form>
 <div class="row movie-list" id="searchResult">
 </div>
 </div>    <div class="container"> 
