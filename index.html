@@ -151,11 +151,19 @@
 	</script>
 </div>
 <body>
-
-<form action="#" onsubmit="return false;">
-    <input type="text" id="project"/>
-    <button id="submit" onclick="goToProject()">Go</button>
-</form>
+<script>
+  (function() {
+    var cx = '012469030013817408144:vrwtcckosic';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
 <div class="row movie-list" id="searchResult">
 </div>
 </div>    <div class="container"> 
